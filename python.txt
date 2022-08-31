@@ -1,0 +1,68 @@
+패키지
+flask - 서버
+데이터베이스 - Dnspython, pymongo 
+크롤링 - bs4, requests
+
+=================================================================================
+초기 세팅
+/처음에만 sudo chmod 400 /Users/gwon-yong-gyo/kwonga_mykey.pem
+ssh -i /Users/gwon-yong-gyo/kwonga_mykey.pem ubuntu@3.34.91.148
+
+# python3 -> python
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
+# pip3 -> pip
+sudo apt-get update
+sudo apt-get install -y python3-pip
+sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+
+# port forwarding
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 5000
+
+ps -ef | grep 'python app.py' | awk '{print $2}' | xargs kill
+
+=================================================================================
+
+db 연결(flask) - 몽고db 기본 세팅
+from pymongo import MongoClient
+client = MongoClient('mongodb+srv://test:sparta@cluster0.gxa02vr.mongodb.net/?retryWrites=true&w=majority',tls=True,
+                             tlsAllowInvalidCertificates=True)
+db = client.dbsparta
+
+# # 저장 - 예시
+# doc = {'name':'bobby','age':21}
+# db.users.insert_one(doc)
+#
+# # 한 개 찾기 - 예시
+# user = db.users.find_one({'name':'bobby'})
+#
+# # 여러개 찾기 - 예시 ( _id 값은 제외하고 출력)
+# all_users = list(db.users.find({},{'_id':False}))
+#
+# # 바꾸기 - 예시
+# db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
+#
+# # 지우기 - 예시
+# db.users.delete_one({'name':'bobby'})
+
+=================================================================================
+
+크롤링 기본 세팅
+import requests
+from bs4 import BeautifulSoup
+
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
+data = requests.get('https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&date=20210829',headers=headers)
+
+soup = BeautifulSoup(data.text, 'html.parser')
+
+1. Var = Soup.select()로 중복되는 경로를 가져온다.
+2. var을 for문으로 돌려서 원하는 데이터 를 추출한다.
+
+=================================================================================
+
+*알아두면 좋은 함수
+.text //텍스트만 추출
+.strip() 공백제거
+string[start , end] 인덱스 추출
+string[start : ] star 부터 끝까지 추출

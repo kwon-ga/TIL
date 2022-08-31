@@ -1,0 +1,47 @@
+
+====================================================================================
+Git !!!
+
+명령어 
+디렉토리에 접근 해서
+Git init > 워크스페이스에 git 저장소를 설정한다 (.git 파일 생성)
+Git status > 버전관리가 안되는 파일을 출력 (리비전 관리)
+Git add file_name > 버전 관리를 해달라고 요청 ( 파일 이름 대신 . 을 붙이면 전부 요청)
+Git commit > 파일 커밋 내용을 담고있으며 commit msg를 남길 수 있다.
+Git commit -m “commit message” > 커멘드 라인에서 메세지를 직접 입력해서 커밋 가능
+
+<전 버전과 차이점을 알아볼때>
+Git log > 디렉토리의 로그를 볼 수 있다.
+Git log -p > 소스 상의 차이점
+Git log —all —graph —oneline
+*왜 add 과정이 필요한가 ? > add 시 커밋 스테이지로 올라가는 개념
+*stage (add) - repository (commit)
+Git diff > 마지막 버전에서 어떤 수정사항이 있는지 
+
+Git checkout commitVer > 원하는 리비전으로 
+Git checkout ‘master’ > 최신 커밋 버전으로 
+
+Git reset —hard “commitVersion” > 헤드를 해당 리비전으로 옮기겠다 (기존 리비전 삭제 !!!)
+
+Git revert “이전버전” > 이전 버전으로 리버트, 커밋도 동시에 진행되기 때문에 커밋을 제외하려면 옵션을 검색해서 이용하자
+
+Branch 
+Git branch > branch의 목록을 출력
+Git branch “branch name” > branch를 생성
+Git checkout “branch name” > branch name 으로 헤드 이동
+
+Merge 
+합치려고 하는 두 branch의 부모 리비전을 base라고 한다
+merge가 된 버전 > merge commit
+git merge “branch name” > Branch head 에 branch name을 병합한다
+
+Local git <==> GitHub.com 연동
+1. 깃허브 저장소를 생성 
+2. Git remote add “원격저장소의별명” “git주소” // 원격저장소와 관련된 명령어 remote // 관습적으로 origin을 사용 (별병)
+3.git push > 지역저장소의 master branch를 기준으로 원격저장소에 저장
+git remote -v > 원격 저장소 주소 확인
+
+
+
+
+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 깃허브 토큰
