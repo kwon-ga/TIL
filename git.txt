@@ -32,6 +32,11 @@ Git checkout “branch name” > branch name 으로 헤드 이동
 
 Merge 
 합치려고 하는 두 branch의 부모 리비전을 base라고 한다
+1. 헤더를 설정해주고 가져올 브랜치 이름을 복사
+2. Git merge ‘branch name’
+3. 충돌 시 파일에서 수기로 검수 후 저장
+4. 저장한 파일 git add ’충돌파일명’
+5. Git commit
 merge가 된 버전 > merge commit
 git merge “branch name” > Branch head 에 branch name을 병합한다
 
@@ -40,7 +45,7 @@ Local git <==> GitHub.com 연동
 2. Git remote add “원격저장소의별명” “git주소” // 원격저장소와 관련된 명령어 remote // 관습적으로 origin을 사용 (별병)
 3.git push > 지역저장소의 master branch를 기준으로 원격저장소에 저장
 git remote -v > 원격 저장소 주소 확인
-
+Git push ‘원격저장소 이름’  ‘원격 저장소의 브랜치 이름’
 
 
 
