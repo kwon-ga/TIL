@@ -66,3 +66,14 @@ soup = BeautifulSoup(data.text, 'html.parser')
 .strip() 공백제거
 string[start , end] 인덱스 추출
 string[start : ] star 부터 끝까지 추출
+
+
+
+return render_template('index.html',data = 'data')
+전달한 데이터를 받는 방법 python -> js  {{data}}
+
+session에 값 넣기 값을 넣으면 쿠키 형태로 저장되는 것 같음
+session['key'] = value
+session.pop('key',None)
+
+
