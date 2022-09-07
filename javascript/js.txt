@@ -1,0 +1,15 @@
+
+jquery
+페이지 로딩 시 스크립트 실행
+$(document).ready(function(){ }
+
+$(‘#…’).attr(‘’, ? ); 태그 내 속성 변경
+$(‘#…’).text(str); 태그 내 텍스트 변경
+$(‘#…’).empty(str); 자식 태그 삭제
+$(‘#…’).append(temp); 자식 태그 추가
+$(‘#…’).show(); 태그 보이기
+$(‘#…’).hide(); 태그 숨기기
+
+Js
+‘str’.repeat(num); str을 num만큼 추가
+Window.location.reload();
