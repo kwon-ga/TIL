@@ -1,6 +1,25 @@
 ajax는 자바스크립트를 이용해서 비동기식으로 서버와 통신하는 방식
 
-아작스 통신 기본
+ajax를 호출하여 리턴 값을 받고싶은 경우에는
+function test(){
+  let result ; 
+
+  $.ajax({
+    type: "GET/POST",
+    url: “api url”,
+    data: {},
+    async : false,
+    success: function (response) {
+        result = respinse;      
+    }
+  });  
+  
+  return result;
+}
+
+
+
+ajax 통신 기본 (비동기)
 $.ajax({
   type: "GET/POST",
   url: “api url”,
@@ -8,6 +27,14 @@ $.ajax({
   success: function (response) {}
 });
 
+ajax 통신 기본 (동기)
+$.ajax({
+  type: "GET/POST",
+  url: “api url”,
+  data: {},
+  async : false,
+  success: function (response) {}
+});
 
 
 $.ajax ({
