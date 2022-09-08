@@ -1,0 +1,14 @@
+var itcTimer = 0;
+return function (callback, ms) {
+clearTimeout(itcTimer);
+itcTimer = setTimeout(callback, ms);
+};
+})();
+            
+//키보드 입력 감지            
+$(".search_input").keyup(function () {
+   itcdelay(function () {
+         send_keyword();
+   }, 100);
+});
+
