@@ -5,6 +5,32 @@ node js에서 가장 보편적으로 사용하는 프레임워크이다.
 >> npm install express --save
 
 
+* 미들웨어
+서로가 서로를 연결하는 소프트웨어 ?
+결국에 모든 것들은 미들웨어로 볼 수 있다.
+
+* 미들웨어의 구조
+app.use(function); 를 사용하면 된다
+단, 함수의 인자값은 req,res,next 를 같는다.
+
+중복된 기능을 request에 프로퍼티를 만들어서 req.pro 에 저장한다.
+
+ex) app.get('*',()=>{
+  ...
+})
+-> 모든 get 요청에 미들웨어를 실행시킨다.
+
+
+* 미들웨어의 실행순서
+
+<미들웨어의 여러 단계>
+애플리케이션 레벨 미들웨어 -> app.get / .post / .use
+라우터 레벨 미들웨어
+오류 처리 미들웨어
+기본 제공 미들웨어
+써드파티 미들웨어-> compression , body parser
+
+
 * express에서의 redirect
 response.redirect('/path');
 
@@ -18,9 +44,79 @@ app.get('/test/:testdata/:testdata2',(req,res)=>{
 즉, req.params 를 통해 객체로 넘어온다.
 
 
-
 * express에서 정적 파일 처리하는 방법
-app.use('/앞단에서 사용할 패스',express.static("./정적파일 주소"))
-이렇게 설정하면 css 파일이나 js 파일을 참조할 때 src='/앞단에서 사용할 패스/파일' 으로 설정해서 관리할 수 있다.
 
+ex)
+localhost:3000/static/css/index.css
+localhost:3000/static/js/index.js
+localhost:3000/static/img/index.png
+
+app.use(express.static('static')
+
+>>>
+localhost:3000/css/index.css
+localhost:3000/js/index.js
+localhost:3000/img/index.png
+
+
+* 미들웨어의 사용 - body parser
+기존 post 요청을 받아올 때 변수를 하나 설정하고 그 변수에 뎅이터가 들어올 때 발생하는 request.on() 이벤트로 += 해준다.  
+
+웹브라우저에서 요청한 정보의 본체를 body라고 한다.
+그 본체를 설명하는 데이터를 header 라고 한다.
+그 본체를 분석해서 가공해주는 미들웨어가 body parser 이다.
+
+post 데이터를 자동으로 배열로 가공하여 만들어준다.
+
+
+* 미들웨어의 사용 - compression
+웹서버가 웹브라우저에 응답할 때 데이터를 압축한다.
+압축을 하고 푸는 것이 비용과 시간 측면에서 훨씬 저렴하다.
+그래서 compression을 사용한다.
+
+app.use(compression());
+를 선언해주고
+개발자도구 네트워크 데이터 용량을 보면 드라마틱하게 
+용량이 줄었음을 볼 수 있다.
+
+
+* 에러처리
+
+<404 not found>
+맨 마지막에 
+app.use((req,res,next)=>{
+  res.status(404).send('404 not found');
+})
+
+왜 맨 마지막이냐 ? 
+미들웨어는 순차적으로 실행되기 때문에 매핑된게 없으면 마지막에 저걸 타게 해주는거
+
+각 모듈에서 넘어오는 에러 메세지를 판단하여 분기처리
+
+err 값이 리턴되었다 ? 
+next(err); 호출 
+
+에러 핸들러에 의해 아래 미들웨어로 보내준다.
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+내일 할거 !! 
+미들웨어란 ? - 개념정리
+next() &&& 미들웨어 실행 순서
+미들웨어 레베루
+라우터 ! 
 
