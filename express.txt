@@ -1,0 +1,26 @@
+Express
+
+node js에서 가장 보편적으로 사용하는 프레임워크이다.
+
+>> npm install express --save
+
+
+* express에서의 redirect
+response.redirect('/path');
+
+
+* path를 통해 파라미터를 전달하는 경우 express에서는
+app.get('/test/:testdata/:testdata2',(req,res)=>{
+	res.send(req.params);
+})
+>> ../test/DATA/DATA2
+>>{"testdata": "DATA","testdata2":"DATA2"}
+즉, req.params 를 통해 객체로 넘어온다.
+
+
+
+* express에서 정적 파일 처리하는 방법
+app.use('/앞단에서 사용할 패스',express.static("./정적파일 주소"))
+이렇게 설정하면 css 파일이나 js 파일을 참조할 때 src='/앞단에서 사용할 패스/파일' 으로 설정해서 관리할 수 있다.
+
+
