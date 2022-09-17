@@ -6,12 +6,13 @@ node js에서 가장 보편적으로 사용하는 프레임워크이다.
 
 
 * 미들웨어
+클라이언트에게 요청이 오고 그 요청을 보내기 위해 응답하려는 중간에서 목적에 맞게 처리를 해주는 함수라고 생각할 수 있다.
 서로가 서로를 연결하는 소프트웨어 ?
 결국에 모든 것들은 미들웨어로 볼 수 있다.
 
 * 미들웨어의 구조
 app.use(function); 를 사용하면 된다
-단, 함수의 인자값은 req,res,next 를 같는다.
+단, 함수의 인자값은 req,res,next 를 갖는다.
 
 중복된 기능을 request에 프로퍼티를 만들어서 req.pro 에 저장한다.
 
@@ -103,8 +104,28 @@ app.use(function(err, req, res, next) {
 });
 
 
+* 라우팅
+라우팅이란? url(경로) 및 특정한 http 요청 메소드 (get, post)인 특정 엔드포인트에 대한 클라이언트 요청에 애플리케이션이 응답하는 방법을 결정하는 것을 말한다.
+각 라우트는 하나 이상의 핸들러 함수를 가질 수 있다.
+
+라우트의 기본 구조
+app.nethod('/path',handler function)
 
 
+* 라우터 사용하기
+1. 새 파일을 만든다
+2. 새 파일에 설정
+const express = require('express');
+const router = express.Router();
+
+module.exports = router;
+
+3. 패스를 묶어서 관리할 미들웨어들을 새파일에 옮겨준다.
+* main.js <==> router.js 는 서로
+app  <==> router 로 대칭된다.
+
+4. main.js 에서 require로 불러온 후 app.use('/path',router);로 
+설정해주면 router 안에 들어가있는 미들웨어들의 path 앞에 추가로 path가 붙는다.
 
 
 
