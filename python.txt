@@ -76,4 +76,17 @@ session에 값 넣기 값을 넣으면 쿠키 형태로 저장되는 것 같음
 session['key'] = value
 session.pop('key',None)
 
+* 변수 참조
+test = '밥먹자'
+str = '민수아'+test+'응?'
+->  = f'민수야 {test} 응?'
+결과는 동일하다.
+
+* datetime (파이썬 내장 함수)
+from datetime import datetime
+
+today = datetime.now()
+mytime = today.strftime("%Y-%m-%d-%H-%M-%S")
+-> 년도-월-일-시간-분-
+
 

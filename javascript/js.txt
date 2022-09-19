@@ -13,3 +13,34 @@ $(‘#…’).hide(); 태그 숨기기
 Js
 ‘str’.repeat(num); str을 num만큼 추가
 Window.location.reload();
+
+* file 을 formdata에 쌓아서 서버에 저장하기
+let file = $('#file')[0].files[0]
+let form_data = new FormData()
+form_data.append("file_give", file)
+
+제이쿼리로 포커스 후 0번째에 인덱스에 저장되어있다.
+$('#id')[0]
+그리고 
+$('#id')[0].files[0]
+을 하면 저 태그에 첫번째로 들어가있는 파일의 정보를 가져올 수 있다.
+
+$.ajax({
+      type: "POST",
+      url: "/diary",
+      data: form_data,
+      cache: false,
+      contentType: false,
+      processData: false,
+      success: function (response) {
+          alert(response["msg"])
+          window.location.reload()
+      }
+});
+
+* formData
+
+
+
+
+	
