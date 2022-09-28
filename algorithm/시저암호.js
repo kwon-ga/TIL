@@ -16,21 +16,26 @@ s	n	result
 
 let s = "a B z"	;
 let n = 4 ;
-
+let result = ''
 for(let i = 0 ; i < s.length ; i++){
     let asc = s[i].charCodeAt();
-    console.log(fromCharCode(move_asc(asc,n)));
+    // console.log(move_asc(asc,n))
+    console.log(String.fromCharCode(move_asc(asc,n)));
+    result+=String.fromCharCode(move_asc(asc,n));
     
 }
 
 function move_asc(asc,n){
     if(asc !== 32){
         if(asc <= 90 && asc >= 65){ 
-            return asc+n > 90 ? asc+n-32 : asc+n
+            return asc+n > 90 ? asc+n-26 : asc+n
         }else{
-            return asc+n > 112 ? asc+n-32 : asc+n
+            return asc+n > 122 ? asc+n-26 : asc+n
         }
     }else{
         return 32
     }
 }
+console.log(result);
+
+
