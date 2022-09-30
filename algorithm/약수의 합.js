@@ -15,13 +15,16 @@ n	return
 5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.
 */
 
-let n = 12;
+let n = 13;
 
 function solution(n){
-    
-    let result = 0;
+    let num = n ;
+    let sum = 0;
+    for(let i = 1 ; i <= num ; i++){
+        num % i === 0 ? sum += i : 'num';
+    }
 
-    return n
+    return sum
 }
 
 console.log(solution(n));

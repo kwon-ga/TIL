@@ -38,8 +38,10 @@ $.ajax({
       }
 });
 
-* formData
 
+list.includes(변수)
+리스트에 변수가 있는지, 확인시켜준다.
+있으면 true 없으면 false
 
 
 

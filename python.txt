@@ -90,3 +90,34 @@ mytime = today.strftime("%Y-%m-%d-%H-%M-%S")
 -> 년도-월-일-시간-분-
 
 
+flask에서 get 요청을 받는 방법
+1. request.args.get('변수명')
+2. @app.route('/detail/<keyword>')
+   def detail(keyword):
+	~~~
+url 뒤에 오는 문자열을 keyword라는 변수로 저장하겠다.
+주소를 get 처럼 사용하는 방법
+
+
+서버에서 페이지 이동하는 경우에 데이터를 같이 넘겨줄
+ex) return render_template("index.html",name=name)
+
+넘겨준 값을 jinja2를 이용하여 화면에 뿌려준다
+
+-기본적인 변수 {{변수명}}
+-변수 선언 {% set 변수명 = 변수내용 %}
+-jinja2의 for문 -> 파이썬 스크립트처럼 줄에 민감하다
+예시 for문)
+{% for row in rows %}
+	{% set test = row[i].name %}
+	<li>{{ test }}</li>
+{% endfor %}
+
+예시 if문 )
+{% if test >= 60  %}
+	<li>{{ test }}<li>
+{% endif %}
+
+
+
+

@@ -1,0 +1,7 @@
+http란 ?
+(Hypertext Transfer Protocol)
+인터넷 상에서 클라이언트와 서버가 자원을 주고 받을 때 쓰는 통신 규약.
+
+웹 브라우저가 보내는 http 메세지는 content-type 속성이 multipart/form-data로 지정되고 정해진 형식에 따라 메세지를 인코딩하여 전송한다.
+
+

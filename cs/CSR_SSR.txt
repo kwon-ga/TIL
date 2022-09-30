@@ -1,0 +1,12 @@
+CSR (Client-side rendering)
+- 자바스크립트에서 데이터를 포함해서 보낸 후 클라이언트 쪽에서html을 완성하는 방
+법을 CSR이라고 한다.
+
+SSR (server-side rendering)
+- 서버 쪽에서 템플릿 html에 데이터를 끼워넣어 완성된 형태의 html을 보내주는 방 
+
+ajax는 복합적인 방법이다.
+서버에 요청을 두 번 보냄
+
+
+
