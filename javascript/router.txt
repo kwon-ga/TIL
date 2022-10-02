@@ -1,0 +1,5 @@
+라우터란 ?
+
+router.METHOD(PATH , (req,res) => {
+	실행될 함수
+})
