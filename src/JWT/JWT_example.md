@@ -6,7 +6,7 @@
 
 <br>
 
-우선 npm에서 jsonwebtoken 라이브러리를 사용한다.
+우선 npm에서 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) 라이브러리를 사용한다.
 
 <br>
 
