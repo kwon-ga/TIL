@@ -65,15 +65,15 @@ console.log(typeof x, x); // number 10
 
 ```js
 // 문자열로 형변환
-String(30);			// '30'
+String(30);		// '30'
 NaN.toStriong();	// 'NaN'
-true+'';			// 'true'
+true+'';		// 'true'
 
 // 숫자열로 형변환
 Number('999');		// 999
 parseInt('-30');	// -30
-+56					// 56
-+true				// 1
++56			// 56
++true			// 1
 Number(false);		// 0
 ```
 	
