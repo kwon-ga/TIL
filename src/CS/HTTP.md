@@ -71,7 +71,7 @@ GET method를 제외한 모든 요청/응답들은 Payload를 보낼 수 있다.
 
 <br>
 
-![](https://velog.velcdn.com/images/kwon-ga/post/88f5925d-705a-4ce4-abbc-13d0d35e5012/image.png)
+![](../img/HTTP.png)
 
 
 불순한 데이터 리스트 중 가장 위에 있는 흉악한 파일(붉은색 영역)을 눌러보면 
