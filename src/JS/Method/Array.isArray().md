@@ -1,8 +1,10 @@
 ## Array.isArray();
     
+<br>
 Array.isArray는 Array 생성자 함수의 정적 메서드이다.
 Array.isArray 메서드는 전달된 인수가 배열이면 true, 배열이 아니면 false를 반환한다.
 
+<br>
 
 ``` javascript
 //true

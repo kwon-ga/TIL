@@ -1,5 +1,6 @@
 ## Array.indexOf();
 
+<br>
 
 indexOf 는 원본 배열에서 인수로 전달된 요소를 검색하여 인덱스를 반환하는 메서드이다.
 
@@ -36,7 +37,11 @@ if(foods.indexOf('strawberry') === -1){
 // 콘솔 출력
 console.log(foods) // ['apple', 'banana', 'orange', 'strawberry']
 ```
+<br>
+
 ***
+
+<br>
 
 하지만 ES7에서 새로 도입된 Array.includes 메서드를 활용하면 가독성이 더 좋다. 
 (사실 잘 모르겠다.)
