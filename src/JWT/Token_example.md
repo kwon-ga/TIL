@@ -1,3 +1,10 @@
+## JWT 예제
+
+<br>
+JWT + Bearer 인증 유형은 OAuth 2.0 인증으로 발급한 액세스 토큰이 아니기 때문에 공식적으로는 "비표준" 방식이다.
+
+<br>
+
 ```js
 const jwt = require('jsonwebtoken');
 const cookieParser = require("cookie-parser");

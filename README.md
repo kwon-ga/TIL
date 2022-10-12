@@ -1,19 +1,23 @@
-## 권가의 개발 공부 기록입니다.
-#### 피드백은 항상 환영입니다. 감사합니다 !!
+## ✔ 권가의 개발 공부 기록입니다.
+
+>피드백은 항상 환영입니다. 감사합니다 !!
 
 ***
 
 </br>
 
-## 구성  
+<!-- ✔ <hr> -->
+## ✔ 구성  
 
 [JavaScript](#JavaScript)  
 [NodeJS](#NodeJS)  /  [Express](#Express)  
+[Data Base](#NodeJS)
 [CS](#CS)  
 [JWT](#JWT)
 </br></br>
 ***
 
+</br></br>
 
 ###  [JavaScript](./src/JS/JavaScript.md)
 * [Async](./src/JS/Async.md)
@@ -25,6 +29,7 @@
 * [Promise](./src/JS/Promise.md)
 * [Template Literal](./src/JS/TemplateLiteral.md)
 * [Type Casting](./src/JS/TypeCasting.md)   
+<!-- * 암호화 https://inpa.tistory.com/entry/NODE-%F0%9F%93%9A-crypto-%EB%AA%A8%EB%93%88-%EC%95%94%ED%98%B8%ED%99%94#%EC%95%94%ED%98%B8%ED%99%94%EC%97%90_%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94_%EB%A9%94%EC%86%8C%EB%93%9C -->
 * Method
   * [Array.isArray()](./src/JS/Method/Array.isArray().md)  
   * [Array.indexOf()](./src/JS/Method/Array.indexOf().md)
@@ -38,11 +43,22 @@
 
 ### [NodeJS](./src/NodeJS/NodeJS.md)
 * [package.json](./src/NodeJS/package.json.md)
+* [Sequelize](./src/NodeJS/Sequelize.md)<!-- * [joi](-) // 업데이트해야함 !!  https://joi.dev/api/?v=17.6.1 -->
 * #### [Express](./src/NodeJS/Express/Express.md)
   * [Cookie](./src/NodeJS/Express/Cookie.md)
   * [Middleware](./src/NodeJS/Express/Middleware.md) [\[예제 보러가기\]](./src/NodeJS/Express/Middleware_example.md)
   * [Session](./src/NodeJS/Express/Session.md)
 
+
+<br>
+
+### [DB](./src/DataBase/DataBase.md) 
+  * [SQL과 NoSQL](./src/DataBase/SQL_NoSQL.md)
+  * [ORM과 ODM](./src/DataBase/ORM_ODM.md)
+<!-- * #### [MongoDB]()
+  * [-](-)
+* #### [My SQL]()
+  * [-]() -->
 
 <br>
 
