@@ -11,7 +11,7 @@
 
 [JavaScript](#JavaScript)  
 [NodeJS](#NodeJS)  /  [Express](#Express)  
-[Data Base](#NodeJS)
+[Data Base](#DataBase)
 [CS](#CS)  
 [JWT](#JWT)
 </br></br>
@@ -52,7 +52,7 @@
 
 <br>
 
-### [DB](./src/DataBase/DataBase.md) 
+### [DataBase](./src/DataBase/DataBase.md) 
   * [SQL과 NoSQL](./src/DataBase/SQL_NoSQL.md)
   * [ORM과 ODM](./src/DataBase/ORM_ODM.md)
 <!-- * #### [MongoDB]()
