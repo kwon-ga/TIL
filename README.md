@@ -11,7 +11,7 @@
 
 [JavaScript](#JavaScript)  
 [NodeJS](#NodeJS)  /  [Express](#Express)  
-[Data Base](#DataBase)
+[Data Base](#DataBase)  
 [CS](#CS)  
 [JWT](#JWT)
 </br></br>
@@ -19,7 +19,7 @@
 
 </br></br>
 
-###  [JavaScript](./src/JS/JavaScript.md)
+### ✔ [JavaScript](./src/JS/JavaScript.md)
 * [Async](./src/JS/Async.md)
 * [CallBack](./src/JS/CallBack.md)
 * [Class](./src/JS/Class.md)
@@ -27,7 +27,7 @@
 * [Hoisting](./src/JS/Hoisting.md)
 * [Object](./src/JS/Object.md)
 * [Promise](./src/JS/Promise.md)
-* [Regular Expression](./src/JS/Regular_Expression.md)
+* [Regular Expression](./src/JS/Regular_Expression.md) [\[자주쓰는 정규표현식 보러가기\]](./src/JS/Regular_Expression2.md)
 * [Template Literal](./src/JS/TemplateLiteral.md)
 * [Type Casting](./src/JS/TypeCasting.md)   
 <!-- * 암호화 https://inpa.tistory.com/entry/NODE-%F0%9F%93%9A-crypto-%EB%AA%A8%EB%93%88-%EC%95%94%ED%98%B8%ED%99%94#%EC%95%94%ED%98%B8%ED%99%94%EC%97%90_%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94_%EB%A9%94%EC%86%8C%EB%93%9C -->
@@ -42,10 +42,13 @@
 
 <br>
 
-### [NodeJS](./src/NodeJS/NodeJS.md)
+### ✔ [NodeJS](./src/NodeJS/NodeJS.md)
+* [Bcrypt](./src/NodeJS/Bcrypt.md)
 * [dotenv](./src/NodeJS/dotenv.md)
 * [package.json](./src/NodeJS/package.json.md)
 * [Sequelize](./src/NodeJS/Sequelize.md)<!-- * [joi](-) // 업데이트해야함 !!  https://joi.dev/api/?v=17.6.1 -->
+<!-- * jest -->
+<!--crypto -->
 * #### [Express](./src/NodeJS/Express/Express.md)
   * [Cookie](./src/NodeJS/Express/Cookie.md)
   * [Middleware](./src/NodeJS/Express/Middleware.md) [\[예제 보러가기\]](./src/NodeJS/Express/Middleware_example.md)
@@ -54,17 +57,18 @@
 
 <br>
 
-### [DataBase](./src/DataBase/DataBase.md) 
+### ✔ [DataBase](./src/DataBase/DataBase.md) 
   * [SQL과 NoSQL](./src/DataBase/SQL_NoSQL.md)
   * [ORM과 ODM](./src/DataBase/ORM_ODM.md)
+* #### [My SQL](./src/DataBase/MySQL/MySQL.md)
+  * [CREATE](./src/DataBase/MySQL/CREATE.md)
+  * [제약 조건](./src/DataBase/MySQL/Constraint.md)
 <!-- * #### [MongoDB]()
-  * [-](-)
-* #### [My SQL]()
-  * [-]() -->
+  * [-](-) -->
 
 <br>
 
-### CS
+### ✔ CS
 * [API](./src/CS/API.md)
 * [Cookie_Session](./src/CS/Cookie_Session.md)
 * [HTTP](./src/CS/HTTP.md)
@@ -73,7 +77,7 @@
 
 <br>
 
-### [JWT](https://jwt.io/)
+###  ✔ [JWT](https://jwt.io/)
   * [JWT 개요](./src/JWT/JWT.md)
 [\[예제 보러가기\]](./src/JWT/JWT_example.md)
   * [Access Token](./src/JWT/AccessToken.md)

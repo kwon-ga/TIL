@@ -178,68 +178,32 @@ target.match(regExp); // ['is', index: 5, input: 'Is this all there is?', groups
 
 <br>
 
-***임의의 문자열 검색***
-
-.은 임의의 문자 한 개를 의미한다. 문자의 내용은 전혀 상관 없다.
-
-```js
-const target = 'Is this all there is?';
-const regExp = /.../g;
-
-target.match(regExp); // ['Is ', 'thi', 's a', 'll ', 'the', 're ', 'is?']
-
-```
-
-
-<br>
-
-***반복 검색***
-
-{m,n}은 패턴이 최소 m번 최대 n번 반복되는 문자열을 출력해준다.
-
-```js
-const target = 'A AA B BB Aa Bb AAA';
-const regExp = /A{1,2}/g;
-const regExp2 = /.{1,2}/g;
-
-target.match(regExp); // ['A', 'AA', 'A', 'AA', 'A']
-target.match(regExp2); // ['A ', 'AA', ' B', ' B', 'B ', 'Aa', ' B', 'b ', 'AA', 'A']
-```
-
-<br>
-
-참고  
-
-1.{n}은 패턴이 n번 반복되는 문자열을 의미한다. 즉, {n,n}과 같다.  
-2.{n,}은 패턴이 최소 n번 이상 반복되는 문자열을 의미한다.  
-3.+는 앞선 패턴이 최소 한 번 이상 반복되는 문자열을 의미한다. 즉 2번의 {1,}와 같은 의미이다.
+||예시|설명|
+|:---:|:---:|:---:|
+|반복검색|
+|.|/.../g|문자의 내용과는 상관없이 세 자리 문자를 검색|
+|{m,n}|{1,2}|패턴이 최소 m번 최대 n번 반복되는 문자열 출력|
+|{n}|{3}|패턴이 n번 반복되는 문자열을 의미한다. ={n,n}|
+|{n,}|{5,}|패턴이 최소 n번 이상 반복되는 문자열을 의미한다.|
+|+|/a+/|바로 앞선 패턴이 최소 한 번 이상 반복되는 문자열을 의미한다.|
+|?|/colou?r/|앞선 패턴이 0~1 번 반복되는 문자열을 의미한다.|
+|OR검색|
+|\||/A\|B/g|or의 의미를 가지고있다.|
+|[ ]|/[AB]/|대괄호를 사용하면 문자열 내부의 문자들을 기반으로 or을 의미한다.|
+|[ - ]|/[A-Za-z]/|[ ] 내부에 -는 범위를 지정해준다.|
+|약어로 검색|||
+|\\d |/\\d/|숫자를 의미한다.|
+|\\D |/\\D/|숫자가 아닌 문자를 의미한다.|
+|\\w |/\\w/|알파벳,숫자,언더스코어를 의미한다. = [A-Za-z0-9_]|
+|\\W |/\\W/|알파벳,숫자,언더스코어가 아닌 문자를 의미한다. |
+|NOT 검색|||
+|^|/[^0-9]/|[ ... ] 내부의 ^는 not의 의미를 갖는다.|
+|^|/^http/|[ ... ] 외부의 ^는 문자열로 시작하는지 검토한다.|
+|$|/com$/| 문자열로 끝나는지 검토한다.|
 
 
-```js
-const target = 'A AA B BB Aa Bb AAA';
-const regExp1 = /A{2}/g;
-const regExp2 = /A{2,}/g;
-const regExp3 = /A+/g;
-
-
-target.match(regExp1); // ['AA', 'AA']
-target.match(regExp2); // ['AA', 'AAA']
-target.match(regExp3); // ['A', 'AA', 'A', 'AAA']
-```
-
-<br>
-
-4.?는 앞선 패턴이 최대 1번 이상 (0번 포함) 반복되는 문자열을 의미한다.
-```js
-const target = 'color colour colouur colouuur';
-
-// colo 다음 u가 최대 1번 이상 (0번 포함) 반복되는 문자열을 찾는다.
-const regExp = /colou?r/g;
-
-target.match(regExp); // ['color', 'colour']
-```
 
 
 <br><br>
 
-[다음 페이지 ▶︎](./Regular_Expression2.md)
+[자주 사용하는 정규식 ▶︎](./Regular_Expression2.md)
