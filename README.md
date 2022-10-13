@@ -19,7 +19,7 @@
 
 </br></br>
 
-### [✔ JavaScript](./src/JS/JavaScript.md)
+### [✔JavaScript](./src/JS/JavaScript.md)
 * [Async](./src/JS/Async.md)
 * [CallBack](./src/JS/CallBack.md)
 * [Class](./src/JS/Class.md)
@@ -42,7 +42,7 @@
 
 <br>
 
-### [✔ NodeJS](./src/NodeJS/NodeJS.md)
+### [✔NodeJS](./src/NodeJS/NodeJS.md)
 * [Bcrypt](./src/NodeJS/Bcrypt.md)
 * [dotenv](./src/NodeJS/dotenv.md)
 * [package.json](./src/NodeJS/package.json.md)
@@ -57,7 +57,7 @@
 
 <br>
 
-### [✔ DataBase](./src/DataBase/DataBase.md) 
+### [✔DataBase](./src/DataBase/DataBase.md) 
   * [SQL과 NoSQL](./src/DataBase/SQL_NoSQL.md)
   * [ORM과 ODM](./src/DataBase/ORM_ODM.md)
 * #### [My SQL](./src/DataBase/MySQL/MySQL.md)
@@ -68,7 +68,7 @@
 
 <br>
 
-### ✔ CS
+### ✔CS
 * [API](./src/CS/API.md)
 * [Cookie_Session](./src/CS/Cookie_Session.md)
 * [HTTP](./src/CS/HTTP.md)
@@ -77,7 +77,7 @@
 
 <br>
 
-###  [✔ JWT](https://jwt.io/)
+###  [✔JWT](https://jwt.io/)
   * [JWT 개요](./src/JWT/JWT.md)
 [\[예제 보러가기\]](./src/JWT/JWT_example.md)
   * [Access Token](./src/JWT/AccessToken.md)
