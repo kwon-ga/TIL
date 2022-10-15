@@ -53,7 +53,10 @@
 * [Bcrypt](./src/NodeJS/Bcrypt.md)
 * [dotenv](./src/NodeJS/dotenv.md)
 * [package.json](./src/NodeJS/package.json.md)
-* [Sequelize](./src/NodeJS/Sequelize.md)<!-- * [joi](-) // 업데이트해야함 !!  https://joi.dev/api/?v=17.6.1 -->
+* [Prettier](./src/NodeJS/Prettier.md)
+* [Sequelize](./src/NodeJS/Sequelize.md)
+* [Socket.IO](./src/NodeJS/Socket.IO.md)
+  <!-- * [joi](-) // 업데이트해야함 !!  https://joi.dev/api/?v=17.6.1 -->
 <!-- * jest -->
 <!--crypto -->
 * #### [Express](./src/NodeJS/Express/Express.md)
@@ -80,8 +83,11 @@
 * [API](./src/CS/API.md)
 * [Cookie_Session](./src/CS/Cookie_Session.md)
 * [HTTP](./src/CS/HTTP.md)
+* [ObjectOriented](./src/CS/ObjectOriented.md)
+* [Socket](./src/CS/Socket.md)
 * [Static_Dynamic](./src/CS/Static_Dynamic.md)
 * [Sync_Async](./src/CS/Sync_Async.md)
+* [TCP와 UDP](./src/CS/TCP_UDP.md)
 
 <br>
 
@@ -102,9 +108,9 @@
 * <details><summary> Math </summary>
   <div markdown="2">
 
-  * [Bit Manipulation](src/algorithms/math/bits.md) - 비트 쪼개기!
-  <!-- * `B` [팩토리얼](src/algorithms/math/factorial)
-  * `B` [피보나치 수](src/algorithms/math/fibonacci)
+  <!-- * [Bit Manipulation](src/algorithms/math/bits.md) - 비트 쪼개기! -->
+  <!-- * `B` [팩토리얼](src/algorithms/math/factorial.md) -->
+  <!-- * `B` [피보나치 수](src/algorithms/math/fibonacci)
   * `B` [소수 판별](src/algorithms/math/primality-test) (trial division 방식)
   * `B` [유클리드 호제법](src/algorithms/math/euclidean-algorithm) - 최대공약수 (GCD)
   * `B` [최소 공배수](src/algorithms/math/least-common-multiple) - LCM
