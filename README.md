@@ -71,9 +71,21 @@
   * [SQL과 NoSQL](./src/DataBase/SQL_NoSQL.md)
   * [ORM과 ODM](./src/DataBase/ORM_ODM.md)
 * [My SQL](./src/DataBase/MySQL/MySQL.md)
-  * [CREATE](./src/DataBase/MySQL/CREATE.md)
-  * [ALTER](./src/DataBase/MySQL/ALTER.md)
   * [제약 조건](./src/DataBase/MySQL/Constraint.md)
+  * DDL (Data Definition Language)
+    * [CREATE](./src/DataBase/MySQL/CREATE.md)
+    * [ALTER](./src/DataBase/MySQL/ALTER.md)
+    * [DROP](./src/DataBase/MySQL/DROP.md)
+  * DML (Data Manipulation Language)
+    * [SELECT](./src/DataBase/MySQL/SELECT.md)
+    * [INSERT](./src/DataBase/MySQL/INSERT.md)
+    * [UPDATE](./src/DataBase/MySQL/UPDATE.md)
+    * [DELETE](./src/DataBase/MySQL/DELETE.md)
+  <!-- * DCL (Data Control Language)
+    * [GRANT](./src/DataBase/MySQL/GRANT.md)
+    * [REVOKE](./src/DataBase/MySQL/REVOKE.md)
+    * [COMMIT](./src/DataBase/MySQL/COMMIT.md)
+    * [ROLLBACK](./src/DataBase/MySQL/ROLLBACK.md) -->
 <!-- * #### [MongoDB]()
   * [-](-) -->
 

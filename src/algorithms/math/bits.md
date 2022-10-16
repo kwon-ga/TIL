@@ -39,4 +39,11 @@ function setBit(number, bitIndex){
 }
 ```
 
+<br><br>
+
+### ✔ Clear Bit
+
+특정 비트를 지운다.
+setBit()와는 다르게 특정 비트를 0으로 세팅하려면 
+
 <!-- https://conscientiousness.tistory.com/entry/Math-Bit-Manipulation-%EB%B9%84%ED%8A%B8-%EC%A1%B0%EC%9E%91 -->
