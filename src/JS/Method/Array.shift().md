@@ -1,4 +1,4 @@
-## Array.shift();
+## ✔ Array.shift();
 
 <br>
 

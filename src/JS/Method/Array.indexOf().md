@@ -1,4 +1,4 @@
-## Array.indexOf();
+## ✔ Array.indexOf();
 
 <br>
 

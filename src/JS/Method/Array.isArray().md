@@ -1,4 +1,4 @@
-## Array.isArray();
+## ✔ Array.isArray();
     
 <br>
 Array.isArray는 Array 생성자 함수의 정적 메서드이다.
