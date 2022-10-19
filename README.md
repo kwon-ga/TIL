@@ -42,6 +42,7 @@
   * [Array.push()](./src/JS/Method/Array.push().md)
   * [Array.shift()](./src/JS/Method/Array.shift().md)
   * [Array.unshift()](./src/JS/Method/Array.unshift().md)
+  * [JSON.parse()](./src/JS/Method/JSON.parse().md)
   </div>
   </details>
 
@@ -52,12 +53,12 @@
 ### [NodeJS](./src/NodeJS/NodeJS.md)
 * [Bcrypt](./src/NodeJS/Bcrypt.md)
 * [dotenv](./src/NodeJS/dotenv.md)
+* [Jest](./src/NodeJS/Jest.md)
 * [package.json](./src/NodeJS/package.json.md)
 * [Prettier](./src/NodeJS/Prettier.md)
 * [Sequelize](./src/NodeJS/Sequelize.md)
 * [Socket.IO](./src/NodeJS/Socket.IO.md)
   <!-- * [joi](-) // 업데이트해야함 !!  https://joi.dev/api/?v=17.6.1 -->
-<!-- * jest -->
 <!--crypto -->
 * #### [Express](./src/NodeJS/Express/Express.md)
   * [Cookie](./src/NodeJS/Express/Cookie.md)
