@@ -271,3 +271,22 @@ findOneByUserId = async(postId) => {
 }
 
 ```
+
+<br>
+
+***
+
+<br>
+
+## ✔ Sequelize config
+
+<br>
+Sequelize config.json을 config.js로 바꾸는 법
+
+<br>
+
+1.config 파일 확장자를 json에서 js로 변경해준다.
+
+2.models/index.js에서   
+const config = require(__dirname + '/../config/config.js')[env]; 로 확장자 변경
+
