@@ -11,6 +11,7 @@
 
 [JavaScript](#JavaScript)  
 [NodeJS](#NodeJS)  /  [Express](#Express)  
+<!-- [TypeScript](#TypeScript) -->
 [Data Base](#DataBase)  
 [CS](#CS)  
 [JWT](#JWT)
@@ -66,6 +67,9 @@
   * [Middleware](./src/NodeJS/Express/Middleware.md) [\[예제 보러가기\]](./src/NodeJS/Express/Middleware_example.md)
   * [Session](./src/NodeJS/Express/Session.md)
 
+<br>
+
+<!-- ### [TypeScript](./src/typescript/TypeScript.md) -->
 
 <br>
 
