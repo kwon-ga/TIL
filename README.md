@@ -20,6 +20,7 @@
 
 [Algorithms](#Algorithms)
 </br></br>
+
 ***
 
 </br></br>
@@ -73,7 +74,7 @@
 
 <br>
 
-<!-- ### [TypeScript](./src/typescript/TypeScript.md) -->
+### [TypeScript](./src/typescript/TypeScript.md)
 
 <br>
 
@@ -126,7 +127,7 @@
 
 
 
-
+<!--
 ###  Algorithms
 * <details><summary> Math </summary>
   <div markdown="2">
