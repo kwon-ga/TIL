@@ -160,9 +160,10 @@ Tuple 타입은 배열과 매우 유사하다.
 다만, 정해진 타입의 고정된 길이 배열을 표현할 때 사용한다.
 
 ```typescript
-
-
-
+let tuple: [string, number];
+tuple = ['a', 1];
+tuple = ['a', 1, 2]; // Error - TS2322
+tuple = [1, 'a']; // Error - TS2322
 ```
 
 
