@@ -130,14 +130,14 @@
 <br>
 
 - [ ] 01장 : 시간복잡도와 공간복잡도
-- [ ] 02장 : [스택, 큐 자료구조](src/Interview/02.md)
-- [ ] 03장 : [배열, 링크드리스트](src/Interview/03.md)
-- [ ] 04장 : [트랜잭션](src/Interview/04.md)
-- [ ] 05장 : [정규화](src/Interview/05.md)
-- [ ] 06장 : [CORS](src/Interview/06.md)
-- [ ] 07장 : [var, let, const](src/Interview/07.md)
-- [ ] 08장 : [Promise](src/Interview/08.md)
-- [ ] 09장 : [Hoisting](src/Interview/09.md)
+- [X] 02장 : [스택, 큐 자료구조](src/Interview/02.md)
+- [X] 03장 : [배열, 링크드리스트](src/Interview/03.md)
+- [X] 04장 : [트랜잭션](src/Interview/04.md)
+- [X] 05장 : [정규화](src/Interview/05.md)
+- [X] 06장 : [CORS](src/Interview/06.md)
+- [X] 07장 : [var, let, const](src/Interview/07.md)
+- [X] 08장 : [Promise](src/Interview/08.md)
+- [X] 09장 : [Hoisting](src/Interview/09.md)
 - [ ] 10장 : [async await](src/Interview/0.md)
 
 ---
