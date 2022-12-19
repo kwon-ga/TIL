@@ -125,7 +125,54 @@
 
 <br><br>
 
+### ✅ Interview
 
+<br>
+
+- [ ] 01장 : 시간복잡도와 공간복잡도
+- [ ] 02장 : 스택, 큐 자료구조
+- [ ] 03장 : 배열, 링크드리스트
+- [ ] 04장 : 트랜잭션
+- [ ] 05장 : 정규화
+- [ ] 06장 : CORS
+- [ ] 07장 : var, let, const
+- [ ] 08장 : Promise
+- [ ] 09장 : Hoisting
+- [ ] 10장 : async await
+
+---
+
+- [ ] 11장 : Arrow Function
+- [ ] 12장 : ‘==’와 ‘===’
+- [ ] 13장 : Express
+- [ ] 14장 : npm
+- [ ] 15장 : web server, NGINX, Apache
+- [ ] 16장 : 동기와 비공기
+- [ ] 17장 : 모든 요소에 인덱스를 걸지 않는 이유
+- [ ] 18장 : 이분탐색
+- [ ] 19장 : 트리, 그래프
+- [ ] 20장 : 인덱스의 원리
+
+---
+
+- [ ] 21장 : 복합인덱스
+- [ ] 22장 : HTTP HTTPS
+- [ ] 23장 : TCP 3 way handshake
+- [ ] 24장 : TCP UDP
+- [ ] 25장 : Base64 인코딩
+- [ ] 26장 : 프로세스와 스레드
+- [ ] 27장 : Call by reference
+- [ ] 28장 : 동시성과 병렬성
+- [ ] 29장 : 깊은 복사와 얕은 복사
+- [ ] 30장 : JS의 passed by value 와 passed by reference
+
+---
+
+- [ ] 31장 : 고차함수
+- [ ] 32장 : JWT
+- [ ] 33장 : Node JS
+- [ ] 34장 : 이벤트 루프
+- [ ] 35장 : 트랜스파일러와 번들러
 
 <!--
 ###  Algorithms
@@ -143,11 +190,11 @@
   * `B` [파스칼 삼각형](src/algorithms/math/pascal-triangle)
   * `A` [자연수 분할](src/algorithms/math/integer-partition)
   * `A` [리우 후이 π 알고리즘](src/algorithms/math/liu-hui) - N-각형을 기반으로 π 근사치 구하기 -->
-  </div>
+  <!-- </div>
   </details>
 * <details><summary> Sets</summary>
   <div markdown="3">
-  
+   -->
   <!-- * `B` [카티지언 프로덕트](src/algorithms/sets/cartesian-product) - 곱집합
   * `B` [Fisher–Yates 셔플](src/algorithms/sets/fisher-yates) - 유한 시퀀스의 무작위 순열
   * `A` [멱집합](src/algorithms/sets/power-set) - 집합의 모든 부분집합
@@ -159,11 +206,11 @@
   * `A` [배낭 문제](src/algorithms/sets/knapsack-problem) - "0/1" 과 "Unbound"
   * `A` [최대 구간합](src/algorithms/sets/maximum-subarray) - "브루트 포스" 과 "동적 계획법" (Kadane's) 버전
   * `A` [조합 합](src/algorithms/sets/combination-sum) - 특정 합을 구성하는 모든 조합 찾기 -->
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> String</summary>
-  <div markdown="4">
+  <div markdown="4"> -->
 
   <!-- * `B` [해밍 거리](src/algorithms/string/hamming-distance) - 심볼이 다른 위치의 갯수
   * `A` [편집 거리](src/algorithms/string/levenshtein-distance) - 두 시퀀스 간위 최소 편집거리
@@ -173,22 +220,22 @@
   * `A` [최장 공통 부분 문자열](src/algorithms/string/longest-common-substring)
   * `A` [정규 표현식 매칭](src/algorithms/string/regular-expression-matching) -->
   
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> Searches</summary>
-  <div markdown="5">
+  <div markdown="5"> -->
 
   <!-- * `B` [선형 탐색](src/algorithms/search/linear-search)
   * `B` [점프 탐색](src/algorithms/search/jump-search) (or Block Search) - 정렬된 배열에서 탐색
   * `B` [이진 탐색](src/algorithms/search/binary-search) - 정렬된 배열에서 탐색
   * `B` [보간 탐색](src/algorithms/search/interpolation-search) - 균등한 분포를 이루는 정렬된 배열에서 탐색
    -->
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> Sorting</summary>
-  <div markdown="5">
+  <div markdown="5"> -->
 
   <!-- * `B` [거품 정렬](src/algorithms/sorting/bubble-sort)
   * `B` [선택 정렬](src/algorithms/sorting/selection-sort)
@@ -200,20 +247,20 @@
   * `B` [계수 정렬](src/algorithms/sorting/counting-sort)
   * `B` [기수 정렬](src/algorithms/sorting/radix-sort) -->
   
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> Trees</summary>
-  <div markdown="5">
+  <div markdown="5"> -->
 
   <!-- * `B` [깊이 우선 탐색](src/algorithms/tree/depth-first-search) (DFS)
   * `B` [너비 우선 탐색](src/algorithms/tree/breadth-first-search) (BFS) -->
   
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> Graphs</summary>
-  <div markdown="5">
+  <div markdown="5"> -->
 
   <!-- * `B` [깊이 우선 탐색](src/algorithms/graph/depth-first-search) (DFS)
   * `B` [너비 우선 탐색](src/algorithms/graph/breadth-first-search) (BFS)
@@ -231,11 +278,11 @@
   * `A` [강결합 컴포넌트](src/algorithms/graph/strongly-connected-components) - Kosaraju의 알고리즘
   * `A` [외판원 문제](src/algorithms/graph/travelling-salesman) - 각 도시를 다 방문하고 다시 출발점으로 돌아오는 최단 경로 찾기 -->
   
-  </div>
+  <!-- </div>
   </details>
 
 * <details><summary> Uncategorized</summary>
-  <div markdown="5">
+  <div markdown="5"> -->
 
   <!-- * `B` [하노이 탑](src/algorithms/uncategorized/hanoi-tower)
   * `B` [정방 행렬 회전](src/algorithms/uncategorized/square-matrix-rotation) - 제자리(in-place) 알고리즘
@@ -245,8 +292,8 @@
   * `A` [N-Queens 문제](src/algorithms/uncategorized/n-queens)
   * `A` [기사의 여행 문제](src/algorithms/uncategorized/knight-tour) -->
   
-  </div>
-  </details>
+  <!-- </div>
+  </details> -->
 
 
 
