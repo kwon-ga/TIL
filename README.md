@@ -31,6 +31,7 @@
 * [Class](./src/JS/Class.md)
 * [Data Type](./src/JS/DataType.md)
 * [Hoisting](./src/JS/Hoisting.md)
+* [Module](./src/JS/Module.md)
 * [Object](./src/JS/Object.md)
 * [Promise](./src/JS/Promise.md)
 * [Regular Expression](./src/JS/Regular_Expression.md) [\[자주쓰는 정규표현식 보러가기\]](./src/JS/Regular_Expression2.md)
