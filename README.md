@@ -18,7 +18,7 @@
 [CS](#CS)  
 [JWT](#JWT)
 
-[Algorithms](#Algorithms)
+<!-- [Algorithms](#Algorithms) -->
 </br></br>
 
 ***
@@ -124,7 +124,7 @@
 [\[예제 보러가기\]](./src/JWT/Token_example.md)
 
 
-<br><br>
+<!-- <br><br>
 
 ### ✅ Interview
 
@@ -173,7 +173,7 @@
 - [ ] 32장 : JWT
 - [ ] 33장 : Node JS
 - [ ] 34장 : 이벤트 루프
-- [ ] 35장 : 트랜스파일러와 번들러
+- [ ] 35장 : 트랜스파일러와 번들러 -->
 
 <!--
 ###  Algorithms
