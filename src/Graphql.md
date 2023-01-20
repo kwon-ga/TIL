@@ -31,3 +31,14 @@ GraphQL
 
 GraphQL은 리소스에 대한 정보만 정보만 정의하고, 필요한 크기와 형태는 클라이언트 측에서 결정한다.  
 또한 GraphQL은 한 번의 요청에서 여러 리소스에 접근하여 데이터를 받아올 수 있다.
+
+
+<br>
+
+Apollo Server는 schema, modules 혹은 typeDefs가 팔요하다.  
+-> graphql에게 data type을 설명해줘야한다.
+
+graphql은 하나의 endpoint를 갖는다.
+
+data type 과 query type를 필수로 지정해야한다.
+
